@@ -1,0 +1,324 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.eot");
+    src: url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.svg#AvenirNextW1G-Regular")format("svg");
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(223, 236, 233);
+    font-family: "Avenir";
+    margin: 8px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* header styles begin */
+
+header {
+    background-color: #b1d1ca;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+header .title {
+    padding-left: 5px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(255, 236, 138);
+    margin-right: 20px;
+}
+
+header a {
+    margin: 10px;
+}
+
+header a {
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+header .wrapper a {
+    color: rgb(223, 236, 233);
+}
+
+header .wrapper a:hover {
+    color: rgb(255, 236, 138);
+    border-bottom: 2px solid rgb(255, 236, 138);
+}
+
+header .signin a {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(255, 236, 138);
+}
+
+header .signin a:hover {
+    color: rgb(177, 209, 202);
+    background-color: #ffec8a;
+}
+
+/* header styles end */
+
+main {
+    margin: 0px;
+    background-color: rgb(223, 236, 233);
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    padding: 0px 8px;
+    background-color: #b1d1ca;
+}
+
+.article {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.article img {
+    padding-left: 10px;
+    width: 40%;
+}
+
+.video {
+    margin: 0px 8px;
+    width: calc(100% - 16px);
+    height: 200px;
+    background: url(/video.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.video button {
+    font-size: xx-large;
+    text-align: center;
+    font-family: "Avenir";
+    background: none;
+    border: none;
+    background-color: rgb(255, 236, 138);
+    border-radius: 10px;
+    color: rgb(177, 209, 202);
+    font-weight: bold;
+    padding: 5px 5px 0px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.video button:hover {
+    color: rgb(223, 236, 233);
+    background-color: rgb(177, 209, 202);
+}
+
+.video button:hover::after {
+    content: " PLAY";
+}
+
+.team {
+    margin: 0px 8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.team .card {
+    padding: 5px;
+    background-color: #b1d1ca;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team .card span:last-child {
+    color: rgb(223, 236, 233);
+}
+
+main .title {
+    margin-left: 8px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+main .info {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 8px;
+}
+
+main .info .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+main .info .row span {
+    font-size: large;
+    font-weight: bold;
+}
+
+main .info .row .hour {
+    font-weight: normal;
+}
+
+main .info .row a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #b1d1ca;
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+main .info .row a:hover {
+    background-color: #b1d1ca;
+    color: #ffec8a;
+}
+
+main .info .media {
+    margin-top: 5px;
+    display: flex;
+    column-gap: 2%;
+    cursor: pointer;
+}
+
+main .info .media img {
+    width: 15%;
+    transition: transform 0.5s;
+}
+
+main .info .media img:hover {
+    transform: scale(110%);
+    filter: brightness(0) saturate(102%) invert(91%) sepia(32%) saturate(303%) hue-rotate(0deg) brightness(100%) contrast(103%);
+}
+
+.signin form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 8px;
+}
+
+.signin a:first-child {
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    color: #ffec8a;
+    background-color: rgb(177, 209, 202);
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.signin a:first-child:hover {
+    color: black;
+}
+
+.signin .wrapper {
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #b1d1ca;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 5px;
+}
+
+.signin .wrapper .label {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: #ffec8a;
+}
+
+.signin form input {
+    font-family: "Avenir";
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0px 30px 0px;
+    color: #b1d1ca;
+}
+
+.signin form a {
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    background-color: #ffec8a;
+    border: none;
+    border-radius: 5px;
+    color: #b1d1ca;
+    transition: 0.5s;
+}
+
+.signin form a:hover {
+    color: black;
+}
+
+.signin .signup {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin .signup span {
+    margin-top: 40px;
+}
+
+.signin .signup a {
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    color: #b1d1ca;
+    transition: 0.5s;
+}
+
+.signin .signup a:hover {
+    color: black;
+}
+
+.signin .signups a {
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: #ffec8a;
+    border: none;
+    border-radius: 5px;
+    color: #b1d1ca;
+    transition: 0.5s;
+}
+
+.signin .signups a:hover {
+    color: black;
+}
