@@ -99,7 +99,7 @@ footer {
     margin: 0px 8px;
     width: calc(100% - 16px);
     height: 200px;
-    background: url(/video.png);
+    background: url(images/video.png);
     background-size: cover;
     background-position: center;
     display: flex;
