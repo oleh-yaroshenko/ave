@@ -12,7 +12,7 @@ body {
     height: 100vh;
     background-color: rgb(223, 236, 233);
     font-family: "Avenir";
-    margin: 8px 0px;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
