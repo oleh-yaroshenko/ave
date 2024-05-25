@@ -85,6 +85,7 @@ footer {
 }
 
 .article {
+    text-align: justify;
     padding: 8px;
     display: flex;
     align-items: center;
@@ -191,8 +192,7 @@ main .info .row a {
 }
 
 main .info .row a:hover {
-    background-color: #b1d1ca;
-    color: #ffec8a;
+    color: #000000;
 }
 
 main .info .media {
@@ -208,7 +208,7 @@ main .info .media img {
 }
 
 main .info .media img:hover {
-    transform: scale(110%);
+    transform: scale(115%);
     filter: brightness(0) saturate(102%) invert(91%) sepia(32%) saturate(303%) hue-rotate(0deg) brightness(100%) contrast(103%);
 }
 
