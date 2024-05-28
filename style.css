@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "Avenir";
-    src: url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.eot");
-    src: url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/158fa6012dff0f88241ad898c46c0118.svg#AvenirNextW1G-Regular")format("svg");
-}
-
 body {
     height: 100vh;
     background-color: rgb(223, 236, 233);
